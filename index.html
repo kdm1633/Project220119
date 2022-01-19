@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<title>홈페이지 공사중...</title>
+</head>
+<body onload="setTimeout(function(){move()},2000)">
+	<header>
+		<div id="top_menu">
+			<a href="index.html">메인</a>
+		</div>
+	</header>
+	<main>
+		<div id="under_construction_text">
+			홈페이지<br>
+			공사중
+		</div>
+		<div id="main_text">
+			곧 새로운 모습으로 찾아뵙겠습니다.
+		</div>
+		<section id="bar_box">
+			<div id="site_progress">
+				<div id="bar"></div>
+			</div>
+			<script>
+				var i = 0;
+				function move() {
+					if (i == 0) {
+						i = 1;
+						var elem = document.getElementById("bar");
+						var width = 0;
+						var id = setInterval(frame, 15);
+						function frame() {
+							if (width == 80) {
+								clearInterval(id);
+								i = 0;
+							} else {
+								width++;
+								elem.style.width = width + "%";
+								// elem.innerHTML = width  + "%";
+							}
+						}
+					}
+				}
+			</script>
+			<div id="percent0">0%</div>
+			<div id="percent100">100%</div>
+		</section>
+		<div class="clear"></div>
+		<button id="notification_button" type="button" onclick="window.open('notification.html','blank')">알림 받기</button>
+		<div id="blank"></div>
+		<div id="sns">
+			<ul>
+				<li class="circle">
+					<a href="http://www.facebook.com/wix"><img src="img/facebook.webp"></a>
+				</li>
+				<li class="circle">
+					<a href="https://www.linkedin.com/company/wix-com"><img src="img/linkedin.webp"></a>
+				</li>
+				<li class="circle">
+					<a href="https://instagram.com/wix/"><img src="img/instagram.webp"></a>
+				</li>
+				<li class="circle">
+					<a href="http://www.twitter.com/wix"><img src="img/twitter.webp"></a>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		© 2023 by Under Construction. Proudly created with <a href="http://wix.com/?utm_campaign=vir_created_with">Wix.com</a>
+	</footer>
+</body>
+</html>

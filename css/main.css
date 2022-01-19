@@ -1,0 +1,84 @@
+main {
+    height: 844px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+main #under_construction_text {
+    margin: 20px;
+    font-size: 6em;
+    // border: solid 1px red;
+}
+
+main #main_text {
+    height: 17px;
+    margin-bottom: 1%;
+}
+
+main #bar_box {
+    width: 350px;
+    margin: 0 auto;
+}
+
+main #bar_box #site_progress {
+    border-radius: 20px;
+    background-color: grey;
+}
+
+main #bar_box #bar {
+    width: 0%;
+    height: 15px;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    background-color: #83acda;
+}
+
+main #bar_box #percent0 {
+    float: left;
+    height: 100px;
+}
+
+main #bar_box #percent100 {
+    float: right;
+    height: 100px;
+}
+
+main #notification {
+    letter-spacing: 0px;
+}
+
+main #notification_button {
+    padding: 12px 40px;
+    border: none;
+    background-color: #83acda;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+main #notification_button:hover {
+    background-color: #41576E;
+}
+
+main #blank {
+    height: 180px;
+}
+
+main #sns img {
+    margin: 20px;
+}
+
+main #sns li {
+    display: inline-block;
+}
+
+main #sns li.circle {
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    border: solid 2px white;
+    border-radius: 50px;
+}
